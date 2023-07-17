@@ -134,6 +134,7 @@ section.section1 {
 }
 section.section1 .container{
     max-width: 1000px;
+    height: calc(100% + 30px); /* ajuste para melhor ajuste de altura entre as div's */
 }
 .text-section1 {
     position: relative;
@@ -186,7 +187,7 @@ section.section1 .container{
 .device-section1 {
     float: left;
     width: 50%;
-    height: 430px;
+    height: 100%;
     position: relative;
     top: -30px;
     background-image: url('../img/device.png');
@@ -195,9 +196,11 @@ section.section1 .container{
 }
 section.section2 {
     /*margin-top: 30px;*/
-    padding-top: 0px 2%;
+    padding: 0px 3%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(5,55,55,0.5398831407563025) 100%);
     text-align: center;
-    padding: 30px;
+    padding-top: 30px;
 }
 section.section2 .container {
     max-width: 1000px;
@@ -208,11 +211,190 @@ section.section2 p {
     display: inline-block;
 }
 section.section2 img {
+    position: relative;
+    top: 80px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 8px #ccc;
+    box-shadow: 1px 1px 10px 8px rgba(0, 0, 0, 0.5);
     margin-top: 35px;
 }
+section.section3 {
+    width: 100%;
+}
+.part1 {
+    float: left;
+    width: 50%;
+    padding: 140px 10px 90px 20px;
+    background: rgb(0,34,32);
+    background: linear-gradient(90deg, rgba(0,34,32,1) 0%, rgba(0,133,133,1) 100%);
+}
+.wraper-part1 {
+    float: right;
+    max-width: 500px;
+    padding-right: 30px;
+}
+.part1 h2 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+}
+.part1 p {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+.part2 {
+    float: left; 
+    width: 50%;
+    padding: 140px 20px 90px 0px;
+}
+.about-aut {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+.title-aut {
+    float: left;
+    width: 100%;
+}
+.wraper-title-aut {
+    float: left;
+}
+.wraper-title-aut p {
+    font-style: italic;
+}
+.title-aut h2 {
+    padding-right: 15px;
+    font-weight: normal;
+    font-size: 27px;
+}
+.title-aut .img-aut {
+    background-image: url('../img/aut1.png');
+    background-size: contain;
+    background-size: 100% 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 40px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 25px;
+}
+.text-aut {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.slider-bullets {
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 12px;
+}
+.slider-bullets span {
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 8px;
+    background-color: #adadad;
+    cursor: pointer;
+}
+section.section4 {
+    padding: 50px 0;
+    background: rgb(20, 20, 20);
+    background: radial-gradient(circle, rgba(20,20,20,1) 60%, rgba(12,80,65,1) 150%);
+}
+.form {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 15px;
+}
+.form h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.form p {
+    max-width: 400px;
+    padding-right: 15px;
+}
+.form form {
+    margin-top: 20px;
+}
+.form form input[type=text] {
+    width: 90%;
+    font-size: 15px;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 15px;
+    line-height: 58px;
+    margin-top: 10px;
+}
+.form textarea {
+    width: 90%;
+    max-width: 480px;
+    padding: 15px;
+    height: 130px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.form form input[type=submit] {
+    background-color: black;
+    width: 125px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    height: 44px;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 23%, rgba(0,37,34,1) 100%);
+    /* line-height: 44px; */
+    /* text-align: center; não precisa pois input centraliza automaticamente */
+}
+.form form input[type=submit]:hover {
+    transition: 0.1s;
+    scale: 1.1;
+    background: rgb(0,0,0);
+    letter-spacing: 1px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(0, 46, 42) 100%);
+}
+.map-wraper {
+    float: left;
+    width: 50%;
+    color: white;
+    padding: 0 15px;
+}
+.map-wraper h2 {
+    font-size: 25px;
+}
+.map-wraper3 {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+.map-wraper2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+.map {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid rgba(12,80,65,1);
+}
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1044px) {
     section.section1 {
         height: auto;
@@ -276,6 +458,40 @@ section.section2 img {
         font-size: 18px;
         padding: 0 50px;
     }
+    section.section4 .container {
+        text-align: center;
+    }
+    .form {
+        float: none;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .form p {
+        float: none;
+        display: inline-block;
+    }
+    .map-wraper {
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 8%;
+    }
+    .map-wraper3 {
+        margin-top: 10px;
+        width: 100%;
+        padding-top: 100%;
+        max-width: none;
+        display: inline-block;
+        position: relative;
+    }
+    .map-wraper2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
 }
 @media screen and (max-height: 805px) {
     header .container img {
@@ -302,5 +518,23 @@ section.section2 img {
     .call1 p {
         font-size: 18px;
         padding: 0 50px;
+    }
+}
+@media screen and (max-width: 663px) {
+    .part1 {
+        width: 100%;
+        padding: 140px 10px 90px 50px;
+    }
+    .part2 {
+        width: 100%;
+        padding: 80px 10px 80px 20px;
+    }
+    .slider-bullets span {
+        width: 15px;
+        height: 15px;
+        border-radius: 7px;
+    }
+    .wraper-part1 {
+        float: left;
     }
 }
