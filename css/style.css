@@ -95,7 +95,6 @@ header nav.mobile-menu ul {
     top: 90px;
     list-style-type: none;
     text-align: center;
-    z-index: 2;
 }
 nav.mobile-menu ul li {
     border-bottom: 1px solid black;
