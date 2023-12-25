@@ -13,28 +13,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/dinamic-scrollbar.js"></script>
     <title>Programme</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <img src="img/header3.jpg" alt="A man programming on his notebook">
             <div class="logo"><a href=""></a></div><!--logo-->
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">services</a></li>
-                    <li><a href="">about us</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <nav class="mobile-menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="clear"></div><!--clear-->
@@ -44,7 +45,7 @@
             </div><!--call1-->
         </div><!--container-->
     </header>
-    <section class="section1">
+    <section id="services" class="section1">
         <div class="container">
             <div class="text-section1">
                 <h2>Developing unique systems</h2>
@@ -69,11 +70,11 @@
             <img src="img/mockup2.png"/>
         </div><!--container-->
     </section><!--section2-->
-    <section class="section3">
+    <section id="about" class="section3">
         <div class="part1">
             <div class="wraper-part1">
                 <h2>Our team</h2>
-                <p>Laborum laboris veniam aute pariatur ad aliquip voluptate veniam ex irure magna nisi consequat. Qui est esse ea ut ullamco nulla excepteur ut in enim sit. Enim ex ipsum ea minim fugiat cupidatat elit enim aliquip anim. Velit exercitation excepteur officia eu dolore non pariatur nostrud deserunt proident.</p>
+                <p>Laborum laboris veniam aute pariatur ad aliquip voluptate veniam ex irure magna nisi consequat. Qui est esse ea ut ullamco nulla excepteur ut in enim sit. Enim ex ipsum ea minim fugiat cupidatat elit enim aliquip anim. Velit exercitation excepteur officia eu dolore non pariatur nostrud deserunt proident laboris in excepteur. Ex exercitation excepteur dolore mollit anim dolore do ad.</p>
             </div><!--wraper-part1-->
         </div><!--part1-->
         <div class="part2">
@@ -97,7 +98,7 @@
         </div><!--part2-->
         <div class="clear"></div>
     </section><!--section3-->
-    <section class="section4">
+    <section id="contact" class="section4">
         <div class="container">
             <div class="form">
                 <h2>Contact Us</h2>
@@ -124,6 +125,14 @@
     </section><!--section4-->
     <footer>
         <div class="container">
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
             <p>All Rights Reserved. © 2023 Cauã Cavalcante</p>
             <p>caua.cavalcante@outlook.com</p>
             <div class="clear"></div>
