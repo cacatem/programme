@@ -454,7 +454,7 @@ footer p:nth-of-type(2) {
         display: none;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 776px) {
     header nav.desktop-menu {
         display: none;
     }
@@ -586,5 +586,18 @@ footer p:nth-of-type(2) {
     }
     .wraper-part1 {
         float: left;
+    }
+}
+@media screen and (max-width: 570px) {
+    .call1 h2 {
+        font-size: 35px;
+    }
+    .text-section1 h2{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 510px) {
+    footer .container nav.desktop-menu li {
+        padding-right: 15px;
     }
 }
